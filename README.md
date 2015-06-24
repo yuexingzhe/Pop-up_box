@@ -1,14 +1,14 @@
-# Pop-up_box
+## Pop-up_box
 弹窗 demo
 
-## html部分
+### html部分
 ```html
 <button class="btn_click btn_click_1">try this</button>
 ```
 * 其中class="btn_click"是demo中button按钮的默认样式
 * class="btn-click_1"是自己来进行设置的（可以设置成任何值）
 
-## js部分
+### js部分
 ```js
 $(".btn_click_2").click(function() {
 	var str = 'hello...';
@@ -33,4 +33,4 @@ $(".btn_click_2").click(function() {
 * 最后的return false是用来阻止事件冒泡
 
 
-整个demo下载下来后就可以直接运行，快来试试吧
+#### 整个demo下载下来后就可以直接运行，快来试试吧
