@@ -13,7 +13,7 @@ html部分
 class="btn-click_1"是自己来进行设置的（可以设置成任何值）
 
 js部分
-```html
+```js
 $(".btn_click_2").click(function() {
 	var str = 'hello...';
 	$.modal({
