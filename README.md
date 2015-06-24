@@ -27,6 +27,11 @@ $(".btn_click_2").click(function() {
 });
 ```
 
+* All modern browsers are supported.
+* IE8+. To enable IE8 styles add the `lt-ie9` class to the `html` element, as modernizr does.
+* jQuery, jQuery2, Zepto support.
+* Browserify support.
+
 *整个弹窗的调用是通过$.modal(obj)函数来调用的（其中obj是你要传入其中的对象）
 *content用来指定弹窗中显示的内容
 *confirm用来指定点击确认按钮时的回调函数
