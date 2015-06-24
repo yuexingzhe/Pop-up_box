@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<link rel="stylesheet" href="./pop-up.css" />
+	<script src="./jquery.js"></script>
+	<script src="./pop-up.js"></script>
+	<script>
+		$(function() {
+			$(".btn_click_1").click(function() {
+				var str = "hello world...";
+				$.modal({
+					content : str,
+					confirm : function(){
+						alert("ok");
+					},
+					cancel : function(){
+						alert("false");
+					}
+				});
+				return false;
+			});
+			$(".btn_click_2").click(function() {
+				var str = '<input type="text" placeholder="用户名" style="padding: 3px;"/><br /><br /><input type="text" placeholder="密码" style="padding: 3px;"/>';
+				$.modal({
+					content : str,
+					confirm : function(){
+						alert("ok");
+					},
+					cancel : function(){
+						alert("false");
+					}
+				});
+				return false;
+			});
+			$(".btn_click_3").click(function() {
+				var str = "天空下的飞翔";
+				$.modal({
+					content : str,
+					confirm : function(){
+						alert("ok");
+					},
+					cancel : function(){
+						alert("false");
+					},
+					showClose : false
+				});
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<button class="btn_click btn_click_1">try this</button>
+	<button class="btn_click btn_click_2">try this</button>
+	<button class="btn_click btn_click_3">try this</button>
+	<br />
+	<br />
+
+	<div class="remodal_1 out_wrap">
+		<div class="remodal_wrap">
+			<div class="remodal_content">
+				<div class="inner_content">
+					<span class="del"></span>
+					<div class="title">
+						<p>
+						确定要删除地点信息_1？
+						</p>
+					</div>
+					<button class="confirm">确定</button>
+					<button class="cancel">取消</button>	
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
