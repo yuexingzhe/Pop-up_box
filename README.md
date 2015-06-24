@@ -5,13 +5,17 @@
 
 
 html部分
+```html
 <button class="btn_click btn_click_1">try this</button>
+```
+
 其中class="btn_click"是demo中button按钮的默认样式
 class="btn-click_1"是自己来进行设置的（可以设置成任何值）
 
 js部分
+```html
 $(".btn_click_2").click(function() {
-	var str = '<input type="text" placeholder="用户名" style="padding: 3px;"/><br /><br /><input type="text" placeholder="密码" style="padding: 3px;"/>';
+	var str = 'hello...';
 	$.modal({
 		content : str,
 		confirm : function(){
@@ -24,6 +28,8 @@ $(".btn_click_2").click(function() {
 	});
 	return false;
 });
+```
+
 整个弹窗的调用是通过$.modal(obj)函数来调用的（其中obj是你要传入其中的对象）
 content用来指定弹窗中显示的内容
 confirm用来指定点击确认按钮时的回调函数
